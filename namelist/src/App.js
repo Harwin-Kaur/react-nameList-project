@@ -6,19 +6,19 @@ import Form from './components/Form';
 
 function App() {
 
-const [name, setName] = useState('');
+// const [name, setName] = useState('');
 const [list, setList] = useState([]);
 
-const handleonChange = (e) => {
-  const {value} = e.target;
-  setName(value); 
-};
+// const handleOnChange = (e) => {
+//   const {value} = e.target;
+//   setName(value); 
+// };
 
-const handleonSubmit = (e) =>{
-  e.preventDefault();
-  setList([...list, name]);
-};
-console.log(list);
+// const handleOnSubmit = (e) =>{
+//   e.preventDefault();
+//   setList([...list, name]);
+// };
+// console.log(list);
 
   return <div className='wrapper' style={{display: 'flex',
     height: "100vh",

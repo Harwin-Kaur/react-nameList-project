@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Display = () => {
+const Display = ({name}) => {
   return (
-    <div></div>
+    <div>{name}</div>
     // <div className='display'>{name}</div>
   )
 }
