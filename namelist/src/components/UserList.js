@@ -1,8 +1,8 @@
 import React from 'react'
 
-const UserList = () => {
+export const UserList = ({list}) => {
 
-   const list = [];
+//    const list = [];
 
     return (
         <div className='list'>

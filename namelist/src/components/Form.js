@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import Display from './Display';
 
-const Form = () => {
+const Form = ({addUser}) => {
 
 const [name, setName] = useState('');
 
@@ -13,6 +13,7 @@ const handleOnChange = (e) => {
 
 const handleOnSubmit = (e) =>{
   e.preventDefault();
+  addUser(name);
   // setList([...list, name]);
 };
 

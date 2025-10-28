@@ -9,6 +9,10 @@ function App() {
 // const [name, setName] = useState('');
 const [list, setList] = useState([]);
 
+const addUser = (name) => {
+  setList([...list, name]);
+}
+
 // const handleOnChange = (e) => {
 //   const {value} = e.target;
 //   setName(value); 
@@ -18,7 +22,7 @@ const [list, setList] = useState([]);
 //   e.preventDefault();
 //   setList([...list, name]);
 // };
-// console.log(list);
+console.log(list);
 
   return <div className='wrapper' style={{display: 'flex',
     height: "100vh",
@@ -31,8 +35,8 @@ const [list, setList] = useState([]);
       {/* <div className='display'>{name}</div> */}
       
         
-        <Form />
-        <UserList />
+        <Form addUser={addUser}/>
+        <UserList list={list}/>
         
     </div>
   </div>
